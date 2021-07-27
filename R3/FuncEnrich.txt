@@ -1,0 +1,24 @@
+NodeA	Category	NodeB	Description	LogP
+Hot	KEGG Pathway	hsa04144	Endocytosis	-3.62225
+Hot	Reactome Gene Sets	R-HSA-5653656	Vesicle-mediated transport	-3.46013
+Hot	Canonical Pathways	M76	PID P38 ALPHA BETA PATHWAY	-3.37896
+Hot	GO Biological Processes	GO:0030155	regulation of cell adhesion	-3.23545
+Hot	Canonical Pathways	M166	PID ATF2 PATHWAY	-2.56132
+Hot	GO Biological Processes	GO:0045604	regulation of epidermal cell differentiation	-2.52011
+Cold	GO Biological Processes	GO:0045596	negative regulation of cell differentiation	-7.06438
+Cold	GO Biological Processes	GO:0048568	embryonic organ development	-12.2711
+Cold	GO Biological Processes	GO:0001568	blood vessel development	-8.8899
+Cold	GO Biological Processes	GO:0061061	muscle structure development	-5.34356
+Cold	GO Biological Processes	GO:0048704	embryonic skeletal system morphogenesis	-5.04891
+Cold	GO Biological Processes	GO:0009611	response to wounding	-4.63279
+Cold	GO Biological Processes	GO:1905114	cell surface receptor signaling pathway involved in cell-cell signaling	-4.54584
+Cold	Canonical Pathways	M223	PID BETA CATENIN NUC PATHWAY	-4.46982
+Constitutive	Canonical Pathways	M145	PID P53 DOWNSTREAM PATHWAY	-3.26485
+Constitutive	GO Biological Processes	GO:0007346	regulation of mitotic cell cycle	-3.13327
+Constitutive	GO Biological Processes	GO:0051301	cell division	-2.87145
+Constitutive	GO Biological Processes	GO:0090398	cellular senescence	-2.87671
+Constitutive	GO Biological Processes	GO:0033044	regulation of chromosome organization	-2.52271
+Constitutive	Reactome Gene Sets	R-HSA-1500931	Cell-Cell communication	-2.27341
+Hot	KEGG Pathway	hsa05169	Epstein-Barr virus infection	-4.31634
+Constitutive	GO Biological Processes	GO:0051092	positive regulation of NF-kappaB transcription factor activity	-3.08512
+Hot	Reactome Gene Sets	R-HSA-909733	Interferon alpha/beta signaling	-2.36885
