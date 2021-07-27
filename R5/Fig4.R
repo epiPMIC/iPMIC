@@ -30,7 +30,7 @@ pheatX<-function(rexp,filename){
 	BloodFrac.m <- epidish(beta.m = rexp, 
 						   ref.m = sigm,
 						   method = "RPC")$estF 
-	pheat<-t(BloodFrac.m[,c(1:5)])
+	pheat<-t(BloodFrac.m)
 	rownames(pheat)<-c("CD14+ monocyte lineage", "CD19+ B-lymphocytes", 
 						"CD4+ T-cells","CD56+ NK cells", "CD8+ cytotoxic T-lymphocytes")
 	pheat<-pheat[,names(sort(ip.infer))]
