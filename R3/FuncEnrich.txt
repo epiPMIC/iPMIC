@@ -1,0 +1,45 @@
+NodeA	LogP	Description
+Hot	-2.608441734	myeloid cell homeostasis
+Hot	-3.619752783	spleen development
+Hot	-2.503002194	"CD4-positive, alpha-beta T cell differentiation"
+Hot	-2.249500403	"CD4-positive, alpha-beta T cell activation"
+Hot	-2.136376704	alpha-beta T cell differentiation
+Hot	-14.88572519	pattern specification process
+Hot	-11.47371767	embryonic morphogenesis
+Hot	-13.80405824	embryonic organ development
+Hot	-14.18372075	embryonic organ morphogenesis
+Hot	-10.47762009	skeletal system development
+Hot	-9.817288914	cell fate commitment
+Hot	-6.059240437	axon development
+Hot	-5.609121428	axonogenesis
+Hot	-5.958545272	cell morphogenesis involved in differentiation
+Constitutive	-2.955889226	thymus development
+Constitutive	-2.213162005	"CD4-positive, alpha-beta T cell differentiation"
+Constitutive	-2.170282958	regulation of hemopoiesis
+Constitutive	-2.15380247	lymphocyte differentiation
+Constitutive	-2.092784085	regulation of lymphocyte differentiation
+Constitutive	-2.04351613	regulation of leukocyte differentiation
+Constitutive	-18.59360692	pattern specification process
+Constitutive	-22.32491394	embryonic morphogenesis
+Constitutive	-17.53848563	embryonic organ development
+Constitutive	-14.92428134	embryonic organ morphogenesis
+Constitutive	-14.9251776	skeletal system development
+Constitutive	-14.48360776	cell fate commitment
+Constitutive	-5.037096238	axon development
+Constitutive	-5.492111325	axonogenesis
+Constitutive	-5.495870625	cell morphogenesis involved in differentiation
+Cold	-3.018622642	pattern specification process
+Cold	-2.6398271	embryonic morphogenesis
+Cold	-4.452056702	embryonic organ development
+Cold	-3.543051672	embryonic organ morphogenesis
+Cold	-4.182063968	skeletal system development
+Cold	-5.322808841	cell fate commitment
+Cold	-2.941141304	axon development
+Cold	-3.080196866	axonogenesis
+Cold	-2.450513766	cell morphogenesis involved in differentiation
+Cold	-3.018622642	modulation of chemical synaptic transmission
+Cold	-3.015767614	regulation of trans-synaptic signaling
+Cold	-2.405555868	chemical synaptic transmission
+Cold	-2.405555868	anterograde trans-synaptic signaling
+Cold	-2.392071474	trans-synaptic signaling
+Cold	-2.352551806	synaptic signaling
