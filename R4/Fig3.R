@@ -38,8 +38,55 @@ pheatmap(t(pheat),
 
 #####Fig 3C 
 ###python program
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import pandas as pd
+df=pd.read_csv('array.txt',sep="\t",index_col=0)
+data = np.array(df)
+ypos, xpos  = np.indices(data.shape) 
+xpos = xpos.flatten()
+ypos = ypos.flatten()
+zpos = np.zeros(xpos.shape)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+x_scale=30
+y_scale=10
+z_scale=12
 
+scale=np.diag([x_scale, y_scale, z_scale, 1.0])
+scale=scale*(1.0/scale.max())
+scale[3,3]=1.0
 
+def short_proj():
+  return np.dot(Axes3D.get_proj(ax), scale)
 
+ax.get_proj=short_proj
+colors = pd.read_csv('color.txt',sep="\t",index_col=0)
+colors = np.array(colors)
+ax.bar3d(xpos,ypos,zpos, .3,.3,data.flatten(),color=colors.flatten())
+ax.w_xaxis.set_ticks(xpos)
+ax.w_yaxis.set_ticks(ypos)
+plt.show()
+
+########Fig3E-F
+library(pROC)
+roc.data<-data.frame(imc=imc.test$IMC,
+                     hot=imc.test$Hot,
+                     ipmsc=imc.test$ipms.s)
+comp<-list(c("Cold","Hot"))
+p1<-ggplot(roc.data,aes(x=imc,y=ipmsc,fill=imc,color=imc))+
+  geom_jitter(width = 0.2,size=0.5)+
+  geom_violin(width=0.4,color="black",alpha=.5)+
+  geom_boxplot(width=0.4,color="black",fill=NA,
+               outlier.alpha = 0,size=0.5)+
+  theme_few()+
+  theme(legend.position = "none")+
+  ylab("iPMS score")+xlab(NULL)+
+  stat_compare_means(comparisons = comp,method = "wilcox.test",label="p.signif")+
+  scale_color_manual(values = c(Cold="#6AB5DD",Hot="#EA614A"))+
+  scale_fill_manual(values = c(Cold="#6AB5DD",Hot="#EA614A"))+
+  geom_hline(yintercept = 0,linetype="dashed",color="gray40")
+ggsave("TCGA.test.iPMS.pdf",height = 4,width = 3,dpi=600)
 
 
