@@ -1,0 +1,445 @@
+sample	Stage	smoker	Age	gender	recurrence	adjuvant chemotherapy	tumor.size_cm
+GSM959306	III	no	57	female	T2N2M0		
+GSM959307	I	yes	76	male	recurrence: no	3.79	2
+GSM959308	I	yes	60	male	recurrence: no	3.87	1.7
+GSM959309	II	yes	50	male	T1N1M0		
+GSM959310	II	no	70	female	T2N1M0		
+GSM959312	I	yes	71	male	recurrence: no	0.11	9
+GSM959313	II	NA	61	male	T2N1M0		
+GSM959314	I	yes	75	female	recurrence: yes	3.52	3.5
+GSM959315	II	yes	54	male	T3N0M0		
+GSM959316	III	yes	41	female	NA		
+GSM959317	II	yes	53	male	T3N0M0		
+GSM959318	I	yes	49	male	recurrence: no	3.42	2.3
+GSM959320	II	yes	57	male	NA		
+GSM959321	III	yes	39	male	T1N2M0		
+GSM959322	I	yes	68	male	T2N0M0		
+GSM959323	I	NA	71	male	T1N0M0		
+GSM959324	I	no	66	male	T2N0M0		
+GSM959325	II	NA	61	male	T2N1M0		
+GSM959326	I	NA	73	male	T2N0M0		
+GSM959327	I	no	59	female	T2N0M0		
+GSM959328	I	yes	62	female	recurrence: yes	2.17	1.1
+GSM959329	I	yes	66	female	T2N0M0		
+GSM959330	I	yes	68	female	recurrence: yes	1.46	7.5
+GSM959331	II	yes	70	male	T3N0M0		
+GSM959332	I	yes	57	female	recurrence: yes	4.56	3
+GSM959333	III	yes	55	male	T4N0M0		
+GSM959334	I	no	61	female	recurrence: yes	0.78	5
+GSM959335	I	yes	65	female	T1N0M0		
+GSM959336	I	yes	63	female	recurrence: yes	0.27	2
+GSM959337	I	yes	58	female	T1N0M0		
+GSM959338	I	no	88	female	T1N0M0		
+GSM959339	I	yes	60	male	recurrence: no	2.3	2.5
+GSM959340	I	no	90	female	T1N0M0		
+GSM959341	I	yes	74	female	T1N0M0		
+GSM959342	I	yes	74	female	T2N0M0		
+GSM959343	I	yes	81	female	T1N0M0		
+GSM959344	I	yes	48	female	recurrence: yes	0.09	4.9
+GSM959345	I	yes	73	female	recurrence: yes	9.63	4
+GSM959346	I	yes	69	male	recurrence: no	12.72	3
+GSM959347	I	yes	56	male	recurrence: yes	2.52	2
+GSM959348	I	yes	69	female	recurrence: no	4.34	2
+GSM959349	III	yes	79	male	T2N2M0		
+GSM959350	I	yes	81	male	recurrence: no	5.17	4
+GSM959351	I	yes	59	male	recurrence: no	4.91	2
+GSM959352	III	yes	72	female	T2N2M0		
+GSM959353	III	yes	78	female	T1N2M0		
+GSM959354	I	yes	65	male	recurrence: yes	8.55	3.5
+GSM959355	I	yes	66	male	recurrence: yes	4.63	4
+GSM959356	I	yes	70	male	recurrence: no	8.06	2.9
+GSM959357	III	no	52	female	T3N2M0		
+GSM959358	I	yes	63	female	T2N0M0		
+GSM959359	I	yes	85	female	T1N0M0		
+GSM959360	I	NA	59	male	recurrence: no	3.81	3.5
+GSM959361	I	yes	42	male	T1N0M0		
+GSM959362	III	yes	64	female	recurrence: yes	1.39	
+GSM959363	III	yes	62	male	T2N2M0		
+GSM959364	I	yes	73	male	recurrence: no	1.55	6
+GSM959365	I	yes	75	female	recurrence: yes	3.66	2
+GSM959366	I	yes	60	female	recurrence: no	15.04	6
+GSM959367	I	yes	62	female	recurrence: no	13.09	3
+GSM959368	I	yes	73	male	recurrence: no	0.95	3.5
+GSM959369	II	yes	60	female	recurrence: yes	4.4	
+GSM959370	III	yes	77	female	T4N0M0		
+GSM959371	I	no	57	female	recurrence: no	6.54	3
+GSM959373	I	yes	63	female	recurrence: no	5.36	3
+GSM959374	III	yes	63	female	T2N2M0		
+GSM959375	II	yes	58	male	recurrence: yes	1.12	
+GSM959376	I	no	48	female	recurrence: no	15.65	3
+GSM959377	I	yes	72	male	recurrence: no	8.19	
+GSM959378	II	yes	67	male	T1N1M0		
+GSM959379	III	yes	72	male	T2N2M0		
+GSM959380	I	yes	51	male	recurrence: no	10.49	4
+GSM959381	III	yes	57	male	T2N2M0		
+GSM959382	III	yes	58	male	T1N2M0		
+GSM959383	III	yes	56	male	T2N2M0		
+GSM959384	III	yes	63	male	T2N2M0		
+GSM959385	I	yes	72	male	recurrence: no	1.58	2
+GSM959386	I	no	71	female	recurrence: no	9.45	5.4
+GSM959387	I	yes	74	male	recurrence: no	6.1	2.5
+GSM959388	I	yes	62	female	recurrence: yes	4.22	4
+GSM959389	I	yes	57	female	recurrence: yes	0.6	3
+GSM959390	I	no	75	female	recurrence: no	9.49	2.3
+GSM959391	I	yes	59	female	T2N0M0		
+GSM959392	I	yes	73	female	recurrence: no	5.25	2.6
+GSM959393	I	yes	59	female	recurrence: no	13.3	3
+GSM959394	I	no	81	female	recurrence: yes	0.66	2
+GSM959395	I	yes	85	male	recurrence: no	3.68	1.8
+GSM959396	I	yes	64	male	recurrence: no	5.76	2.3
+GSM959397	I	yes	40	female	recurrence: no	8.83	3
+GSM959398	I	yes	85	female	recurrence: no	1.74	1
+GSM959399	I	yes	71	male	recurrence: no	4.2	1.6
+GSM959400	I	yes	54	female	recurrence: yes	8.14	1.1
+GSM959401	I	yes	52	female	recurrence: no	2.11	2.8
+GSM959402	I	yes	83	female	T2N0M0		
+GSM959403	III	yes	75	male	T2N2M0		
+GSM959404	I	no	63	male	T2N0M0		
+GSM959405	III	yes	76	male	T2N2M0		
+GSM959406	II	yes	66	male	T1N1M0		
+GSM959407	III	yes	63	female	T1N2M0		
+GSM959408	II	yes	68	male	recurrence: yes	0.1	
+GSM959409	II	no	81	female	recurrence: no	2.74	
+GSM959410	I	yes	73	female	recurrence: no	4.95	2.5
+GSM959411	I	yes	67	male	T1N0M0		
+GSM959412	IV	yes	57	female	T1N0M1		
+GSM959413	I	yes	81	male	recurrence: no	7.96	2.5
+GSM959414	I	yes	62	female	recurrence: yes	0.83	2.5
+GSM959415	I	yes	72	male	recurrence: no	5.21	6.9
+GSM959416	II	yes	52	female	recurrence: yes	1.16	
+GSM959417	III	yes	59	male	T3N2M0		
+GSM959418	III	yes	69	male	T1N2M0		
+GSM959419	II	yes	60	female	recurrence: yes	1.78	
+GSM959420	II	no	43	female	recurrence: yes	1.09	
+GSM959421	I	yes	71	male	T1N0M0		
+GSM959422	I	yes	44	female	recurrence: no	6.36	2
+GSM959423	II	yes	65	female	T1N1M0		
+GSM959424	I	no	69	female	recurrence: no	7.67	2.4
+GSM959425	I	yes	81	male	recurrence: no	5.66	2.5
+GSM959426	I	yes	73	male	recurrence: no	7.02	1.1
+GSM959427	I	yes	67	male	recurrence: no	6.15	3.1
+GSM959428	I	yes	65	male	recurrence: yes	6.53	3
+GSM959429	IV	yes	84	female	recurrence: no	3.51	
+GSM959430	I	yes	65	female	recurrence: no	13.79	2.5
+GSM959431	III	yes	55	male	T2N2M0		
+GSM959432	I	yes	53	female	recurrence: no	4.05	1.5
+GSM959433	I	yes	73	male	recurrence: no	5.69	2
+GSM959434	I	yes	70	male	recurrence: no	1.82	3
+GSM959435	I	no	76	female	T1N0M0		
+GSM959436	I	NA	57	female	recurrence: no	10.9	2.5
+GSM959437	I	yes	78	male	recurrence: no	4.76	2
+GSM959438	III	yes	64	male	T2N2M0		
+GSM959439	I	yes	62	female	recurrence: no	13.55	2.5
+GSM959440	III	yes	77	male	T1N2M0		
+GSM959441	I	yes	80	female	T1N0M0		
+GSM959442	I	yes	69	male	T1N0M0		
+GSM959443	I	yes	78	male	recurrence: no	3.02	1.5
+GSM959444	I	yes	46	male	recurrence: no	18.64	2
+GSM959445	I	yes	53	female	recurrence: no	13.02	2.9
+GSM959446	I	yes	69	male	recurrence: no	2.2	1.9
+GSM959447	III	yes	80	female	recurrence: yes	0.09	
+GSM959448	II	yes	71	male	recurrence: yes	1.18	
+GSM959449	I	yes	85	male	recurrence: yes	1.95	6
+GSM959450	IV	no	45	male	T1N2M1		
+GSM959451	I	yes	79	female	recurrence: no	9.09	2.5
+GSM959452	I	yes	64	male	recurrence: no	0.05	6.5
+GSM959453	II	yes	62	female	recurrence: yes	2.74	
+GSM959454	I	yes	63	male	recurrence: no	8.1	3.2
+GSM959455	III	yes	49	female	recurrence: no	5.17	
+GSM959456	IV	yes	56	male	T4N0M1		
+GSM959457	II	yes	62	female	T2N1M0		
+GSM959458	I	yes	60	female	T2N0M0		
+GSM959459	I	yes	63	male	NA		
+GSM959460	III	yes	72	female	recurrence: yes	4.15	
+GSM959461	II	yes	55	female	recurrence: yes	0.99	
+GSM959462	I	yes	69	female	T1N0M0		
+GSM959463	I	yes	59	male	T2N0M0		
+GSM959464	II	yes	64	male	T2N1M0		
+GSM959465	I	yes	59	female	recurrence: no	5.24	4
+GSM959466	I	yes	67	female	recurrence: no	7.82	1.7
+GSM959467	III	yes	76	female	T4N2M0		
+GSM959468	I	no	70	female	recurrence: no	3.57	6
+GSM959469	II	yes	51	female	T3N0M0		
+GSM959470	I	yes	61	male	recurrence: yes	1.24	2
+GSM959471	I	yes	83	male	T2N0M0		
+GSM959472	II	yes	56	male	recurrence: yes	0.35	
+GSM959473	I	yes	79	female	recurrence: no	6.9	3.5
+GSM959474	I	yes	67	female	T1N0M0		
+GSM959475	II	yes	53	male	T3N0M0		
+GSM959476	I	yes	73	female	T2N0M0		
+GSM959477	I	yes	82	female	recurrence: yes	3.25	3.5
+GSM959478	I	yes	53	male	recurrence: yes	10.58	4
+GSM959479	IV	yes	48	female	T1N0M1		
+GSM959480	III	yes	59	female	T1N2M0		
+GSM959481	II	NA	85	male	recurrence: no	2.21	
+GSM959482	I	yes	72	male	recurrence: no	5.89	4.5
+GSM959483	II	no	66	female	T2N1M0		
+GSM959484	I	yes	50	female	T1N0M0		
+GSM959485	I	yes	68	female	T2N0M0		
+GSM959486	I	yes	62	male	T1N0M0		
+GSM959487	IV	yes	77	female	T1M1		
+GSM959488	II	yes	68	female	recurrence: yes	1.49	
+GSM959489	I	yes	74	male	T1N0M0		
+GSM959490	I	no	57	female	recurrence: no	11.17	2
+GSM959491	III	yes	54	female	T2N2M0		
+GSM959492	I	yes	64	male	recurrence: yes	5.61	1
+GSM959493	I	yes	71	female	recurrence: no	10.67	3.4
+GSM959494	III	yes	54	male	T2N2M0		
+GSM959495	III	no	75	female	T4N2M0		
+GSM959496	III	yes	72	male	T4N0M0		
+GSM959497	III	yes	56	male	recurrence: no	11.19	
+GSM959498	I	yes	59	male	recurrence: no	8.5	1.5
+GSM959499	II	yes	58	male	T3N0M0		
+GSM959500	I	yes	82	female	recurrence: no	0.46	4
+GSM959501	I	yes	62	female	T2N0M0		
+GSM959502	II	yes	52	male	T2N1M0		
+GSM959503	III	yes	79	male	recurrence: yes	1.89	
+GSM959504	III	no	68	male	T2N2M0		
+GSM959505	IV	no	54	female	T2N2M1		
+GSM959506	I	yes	65	male	recurrence: yes	7.12	5
+GSM959507	I	yes	83	male	T1N0M0		
+GSM959508	I	yes	79	female	recurrence: no	6.08	1.8
+GSM959509	I	yes	75	male	T1N0M0		
+GSM959510	I	yes	52	male	T1N0M0		
+GSM959511	I	yes	76	male	recurrence: no	10.33	2.2
+GSM959513	I	yes	70	female	recurrence: no	3.8	4
+GSM959514	II	yes	81	male	recurrence: yes	1.11	
+GSM959517	II	no	46	female	T1N1M0		
+GSM959519	I	no	51	male	recurrence: yes	0.49	
+GSM959520	I	yes	76	male	recurrence: no	5.83	1.5
+GSM959521	III	no	75	female	T3N2M0		
+GSM959522	I	yes	80	male	recurrence: no	4.17	3
+GSM959523	I	yes	65	male	recurrence: yes	2.3	
+GSM959524	I	yes	67	female	recurrence: no	3.67	3
+GSM959525	III	no	65	female	recurrence: yes	2.06	
+GSM959527	III	yes	71	female	recurrence: yes	0.43	
+GSM959528	I	yes	69	male	recurrence: yes	3.58	2.2
+GSM959529	III	yes	58	male	recurrence: yes	0.22	
+GSM959530	III	yes	68	female	T1N2Mx		
+GSM959533	III	yes	45	male	T2N2M0		
+GSM959534	I	yes	82	male	recurrence: no	3.58	0.9
+GSM959535	III	yes	73	female	T1N2M0		
+GSM959536	III	yes	76	male	T2N2M0		
+GSM959537	I	yes	75	male	recurrence: no	7.75	0.6
+GSM959538	I	yes	80	male	recurrence: no	7	2.5
+GSM959540	II	yes	83	female	T1N1M0		
+GSM959541	I	yes	50	male	recurrence: yes	0.9	
+GSM959543	III	yes	76	female	T2N2M0		
+GSM959544	III	yes	54	female	T1N2M0		
+GSM959545	I	yes	52	male	recurrence: yes	1.71	
+GSM959546	I	yes	45	male	recurrence: no	8.5	2
+GSM959547	I	no	65	female	recurrence: no	7.67	3.1
+GSM959549	III	yes	67	male	T1N2M0		
+GSM959550	I	yes	69	female	recurrence: yes	7.66	2.7
+GSM959551	II	yes	64	female	T1N1M0		
+GSM959552	I	yes	76	female	recurrence: no	4.75	3.5
+GSM959553	I	NA	60	female	recurrence: yes	0.88	
+GSM959555	II	yes	53	male	recurrence: yes	2.3	
+GSM959556	IV	yes	66	female	T3N2M1		
+GSM959557	III	no	77	female	recurrence: yes	1	
+GSM959558	I	no	62	female	T1N0M0		
+GSM959559	III	yes	56	male	recurrence: yes	0.88	
+GSM959560	I	yes	62	male	recurrence: yes	3.1	
+GSM959561	I	yes	76	male	recurrence: no	3	3.5
+GSM959562	I	yes	51	male	recurrence: yes	0.83	
+GSM959564	I	yes	43	male	recurrence: yes	0.84	
+GSM959565	I	yes	62	female	recurrence: no	10.17	1.8
+GSM959566	II	no	69	female	T2N1M0		
+GSM959567	IV	yes	44	male	recurrence: yes	0.6	
+GSM959568	I	no	76	female	recurrence: no	7	1
+GSM959569	I	yes	58	female	recurrence: no	5.17	1.5
+GSM959570	I	yes	52	female	T1N0M0		
+GSM959573	III	no	77	female	recurrence: yes	5	
+GSM959574	II	no	83	female	recurrence: yes	0.5	
+GSM959576	III	yes	52	female	T1N2M0		
+GSM959577	III	yes	62	male	recurrence: yes	0.19	
+GSM959578	III	yes	51	male	recurrence: yes	0.28	
+GSM959579	IV	yes	70	male	recurrence: yes	0.81	
+GSM959581	III	yes	48	male	T4N3M0		
+GSM959582	I	yes	57	male	recurrence: yes	3.21	
+GSM959583	I	yes	67	male	T2N0M0		
+GSM959584	III	yes	67	male	T3N1M0		
+GSM959585	I	no	68	female	recurrence: no	6.58	2.6
+GSM959635	I	yes	81	female	recurrence: no	3.92	2
+GSM959636	III	yes	65	male	T1N2M0		
+GSM959637	III	no	61	male	recurrence: yes	0.11	
+GSM959638	II	yes	69	male	T3N0M0		
+GSM959640	I	yes	74	male	recurrence: yes	1.28	
+GSM959642	I	yes	65	male	recurrence: yes	5.06	
+GSM959643	III	yes	61	female	T1N2M0		
+GSM959644	I	yes	50	female	recurrence: no	5.25	0.5
+GSM959645	II	yes	68	female	T2N1MO		
+GSM959646	III	yes	35	male	T4N2M0		
+GSM959647	I	yes	49	female	recurrence: no	4.83	4
+GSM959648	I	yes	55	female	T2N0M0		
+GSM959649	III	yes	65	female	T2N2M0		
+GSM959650	II	yes	74	female	T3N0M0		
+GSM959656	I	yes	78	male	recurrence: yes	1.18	2.2
+GSM959661	I	yes	74	male	T2N0M0		
+GSM959662	I	yes	73	male	recurrence: yes	0.67	3
+GSM959663	I	yes	40	male	T2N0M0		
+GSM959667	I	yes	56	female	T2N0M0		
+GSM959668	III	yes	73	male	T3N2M0		
+GSM959669	I	yes	73	male	recurrence: yes	5.22	1.1
+GSM959672	II	yes	67	male	recurrence: yes	0.92	
+GSM959673	II	yes	72	male	T2N1M0		
+GSM959674	I	yes	75	male	recurrence: no	0.92	3.2
+GSM959675	III	yes	63	female	T2N2M0		
+GSM959676	I	yes	60	male	T1N0M0		
+GSM959678	I	yes	72	female	recurrence: no	2.08	5.8
+GSM959679	I	yes	54	female	recurrence: yes	5.1	2.5
+GSM959680	I	yes	38	female	recurrence: yes	8.03	4.5
+GSM959682	III	yes	72	male	NA		
+GSM959683	IV	yes	46	male	T3N1M1		
+GSM959684	III	yes	68	female	NA		
+GSM959687	I	yes	79	male	recurrence: no	1.58	2
+GSM959688	II	yes	63	male	recurrence: yes	0.75	
+GSM959690	I	yes	62	male	recurrence: no	1.5	1.5
+GSM959693	III	yes	61	female	recurrence: yes	0.92	
+GSM959694	I	yes	66	male	recurrence: no	1.58	4
+GSM959695	I	yes	63	female	recurrence: no	2.08	1.5
+GSM959696	II	yes	60	male	recurrence: yes	1.5	
+GSM959697	I	no	66	female	recurrence: no	1.83	2.1
+GSM959698	II	yes	66	male	recurrence: yes	1.13	
+GSM959699	II	yes	61	male	recurrence: yes	4.94	
+GSM959700	III	yes	65	male	NA		
+GSM959701	II	yes	72	male	T3N0M0		
+GSM959703	I	yes	70	male	recurrence: yes	4.24	5.5
+GSM959704	II	yes	69	female	T1N1M0		
+GSM959705	I	yes	83	male	recurrence: yes	4.78	3.3
+GSM959707	I	yes	80	female	recurrence: no	1.08	4
+GSM959708	III	no	69	male	T2N2M0		
+GSM959709	I	yes	72	female	recurrence: no	1.42	2.5
+GSM959712	I	yes	63	male	recurrence: yes	5.01	3
+GSM959715	I	no	45	female	recurrence: no	2.08	1.8
+GSM959717	I	yes	75	male	recurrence: yes	5.69	2.5
+GSM959718	III	yes	53	female	recurrence: yes	1.33	
+GSM959719	II	yes	80	male	T3N0M0		
+GSM959720	I	yes	58	male	T1N0M0		
+GSM959721	I	yes	46	male	recurrence: yes	0.06	4.5
+GSM959722	I	yes	50	male	recurrence: yes	8.7	4.5
+GSM959723	I	no	78	female	recurrence: yes	2	2.5
+GSM959724	I	yes	72	male	recurrence: yes	1.33	1.5
+GSM959725	III	yes	54	male	recurrence: yes	1.85	
+GSM959726	I	yes	51	male	T2N0M0		
+GSM959727	III	yes	76	male	recurrence: no	1.58	
+GSM959728	III	no	68	male	NA		
+GSM959730	I	yes	67	male	T1N0M0		
+GSM959731	II	yes	61	male	T1N1M0		
+GSM959732	I	yes	67	male	recurrence: no	1.17	3.3
+GSM959733	I	yes	62	female	recurrence: yes	3.34	5.5
+GSM959734	II	NA	76.6	male	NA		
+GSM959735	I	NA	48.12	female	NA		
+GSM959736	II	NA	52.3	female	NA		
+GSM959737	III	NA	58.6	male	NA		
+GSM959738	I	yes	63.3	female	NA		
+GSM959739	II	NA	56.7	female	NA		
+GSM959740	III	NA	74.2	female	NA		
+GSM959741	III	yes	79.5	male	NA		
+GSM959742	II	yes	66.1	female	NA		
+GSM959743	III	NA	75.6	male	NA		
+GSM959745	III	NA	89.18	male	NA		
+GSM959746	I	NA	67.8	male	NA		
+GSM959747	II	NA	57.9	male	NA		
+GSM959748	II	NA	44.7	female	NA		
+GSM959749	II	yes	79.59	male	NA		
+GSM959751	III	NA	56	female	NA		
+GSM959752	II	NA	65.9	male	NA		
+GSM959753	II	NA	51.1	female	NA		
+GSM959754	II	NA	72.6	male	NA		
+GSM959755	III	NA	71.6	male	NA		
+GSM959757	I	NA	73.3	male	NA		
+GSM959758	II	NA	65.8	female	NA		
+GSM959759	I	NA	71.4	female	NA		
+GSM959760	III	yes	56.78	male	NA		
+GSM959761	I	yes	59.9	male	NA		
+GSM959762	I	NA	72.8	female	NA		
+GSM959763	I	yes	57.7	female	NA		
+GSM959764	II	NA	65.4	female	NA		
+GSM959765	I	NA	54.19	male	NA		
+GSM959766	I	yes	53.6	male	NA		
+GSM959767	II	yes	70.21	female	NA		
+GSM959768	I	NA	69.6	male	NA		
+GSM959769	II	NA	unknown	female	NA		
+GSM959770	I	yes	63.7	male	NA		
+GSM959771	II	NA	69.88	male	NA		
+GSM959772	II	NA	62.15	male	NA		
+GSM959773	II	NA	47.7	female	NA		
+GSM959774	I	NA	70.8	male	NA		
+GSM959775	II	NA	72	male	NA		
+GSM959776	I	NA	67.9	female	NA		
+GSM959777	I	yes	55	male	NA		
+GSM959778	I	NA	65.79	male	NA		
+GSM959779	II	NA	66.7	male	NA		
+GSM959780	I	yes	71.6	female	NA		
+GSM959781	I	NA	54.2	male	NA		
+GSM959782	II	NA	60.4	male	NA		
+GSM959783	I	yes	76.45	male	NA		
+GSM959784	II	yes	70.4	male	NA		
+GSM959785	II	yes	72.9	female	NA		
+GSM959786	III	yes	83.5	female	NA		
+GSM959787	III	yes	67.29	male	NA		
+GSM959788	I	NA	71.7	female	NA		
+GSM959789	III	NA	47.03	male	NA		
+GSM959790	II	NA	49.9	male	NA		
+GSM959791	II	yes	56	male	NA		
+GSM959792	II	NA	73.8	male	NA		
+GSM959793	III	NA	68.9	male	NA		
+GSM959794	III	NA	65.7	female	NA		
+GSM959795	II	NA	72.9	female	NA		
+GSM959796	I	yes	50.45	male	NA		
+GSM959797	II	yes	55.9	male	NA		
+GSM959798	III	NA	68.1	male	NA		
+GSM959799	II	NA	59.9	male	NA		
+GSM959800	I	NA	67.79	female	NA		
+GSM959801	II	yes	65.8	female	NA		
+GSM959802	I	yes	75.7	male	NA		
+GSM959803	II	yes	77.9	male	NA		
+GSM959804	I	NA	77.36	male	NA		
+GSM959805	III	NA	50.39	male	NA		
+GSM959806	II	yes	61.01	female	NA		
+GSM959807	II	NA	81.55	male	NA		
+GSM959808	II	NA	73.39	male	NA		
+GSM959809	III	NA	67.2	male	NA		
+GSM959810	I	yes	63.7	male	NA		
+GSM959811	III	yes	59.7	male	NA		
+GSM959812	I	NA	70.73	female	NA		
+GSM959813	II	NA	69.1	male	NA		
+GSM959814	I	NA	58.79	male	NA		
+GSM959815	II	NA	59.8	male	NA		
+GSM959816	II	NA	53.78	female	NA		
+GSM959817	I	NA	82.7	male	NA		
+GSM959819	I	yes	72	male	T2N0M0		
+GSM959820	III	yes	55	female	recurrence: yes	4.21	
+GSM959821	I	yes	68	male	T2N0M0		
+GSM959822	II	no	77	female	T2N1M0		
+GSM959823	I	yes	75	male	T2N0M0		
+GSM959824	III	yes	55	female	T2N2M0		
+GSM959825	I	yes	70	male	T2N0M0		
+GSM959828	II	yes	67	male	recurrence: yes	5.47	
+GSM959829	I	yes	62	male	T2N0M0		
+GSM959831	III	yes	64	male	T3N1M0		
+GSM959832	II	yes	71	male	T2N1M0		
+GSM959833	I	yes	59	male	T2N0M0		
+GSM959834	I	yes	58	male	T2N0M0		
+GSM959836	III	yes	79	female	T4N2M0		
+GSM959837	I	yes	71	male	T2N0M0		
+GSM959838	II	yes	69	male	T2N1M0		
+GSM959839	I	no	63	female	T2N0M0		
+GSM959840	III	yes	73	male	recurrence: yes	0.05	
+GSM959841	I	yes	77	male	T2N0M0		
+GSM959842	II	yes	57	male	T1N1M0		
+GSM959843	III	no	73	female	recurrence: yes	1.56	
+GSM959844	III	yes	60	female	T2N2M0		
+GSM959845	I	yes	67	male	T2N0M0		
+GSM959846	I	yes	69	male	T2N0M0		
+GSM959847	III	yes	67	male	recurrence: yes	0.32	
+GSM959848	III	yes	62	male	T2N2M0		
+GSM959849	I	no	55	female	recurrence: yes	3.31	
+GSM959850	III	yes	64	male	recurrence: yes	0.85	
+GSM959851	III	yes	44	male	recurrence: yes	1.58	
+GSM959852	III	yes	69	male	recurrence: yes	0.18	
+GSM959853	III	yes	58	male	T2N2M0		
+GSM959854	II	yes	63	male	T2N1M0		
+GSM959855	II	yes	69	male	T1N1M0		
+GSM959856	I	yes	61	male	recurrence: yes	4.76	
