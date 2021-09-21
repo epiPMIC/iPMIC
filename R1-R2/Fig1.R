@@ -26,13 +26,22 @@ umap=data.frame(sample=rownames(udat),umap)
 colnames(umap)<-c("sample","UMAP1","UMAP2")
 sample$UMAP1=umap$UMAP1
 sample$UMAP2=umap$UMAP2
+sample$pheno=gsub("IMC1|IMC2","Cold",sample$IMC)
+sample$pheno=gsub("IMC3|IMC4|IMC5","Hot",sample$pheno)
 
-p<-ggplot(sample,aes(x=UMAP1,y=UMAP2,color=IMC))+
-  geom_point(size=0.3)+
+gd<-data.frame(sample[,c("UMAP1","UMAP2")],
+               IMC=sample$IMC,
+               pheno=sample$pheno)
+p1<-ggplot(gd,aes(x=UMAP1,y=UMAP2,color=IMC))+
+  geom_point(size=1.2)+
   theme_few()+
-  scale_color_d3(palette = "category20")+
-  theme(legend.position = c(0.2,0.3))
-ggsave("LUAD_umap.pdf",height = 3,width = 3,dpi=600)
+  scale_color_d3(palette = "category20")
+p2<-ggplot(gd,aes(x=UMAP1,y=UMAP2,color=pheno))+
+    geom_point(size=1.2)+
+    theme_few()+
+    scale_color_manual(values = c(Cold="#6AB5DD",Hot="#EA614A"))
+p1+p2+ plot_layout(ncol = 1)
+
 
 ##########Figure 1B
 ic<-read.csv("infiltration_estimation_for_tcga.csv",stringsAsFactors = F)
@@ -73,7 +82,7 @@ sample<-merge(sample,meth,by="sample_id")
 dmeth<-read.delim("LUAD_DMethLevel.txt",header = T)
 dmeth$sample=gsub("[.]","-",dmeth$sample)
 
-p1<-ggplot(sample,aes(x=IMC,y=TMB*38/40,fill=IMC,color=IMC))+
+p1<-ggplot(sample,aes(x=IMC,y=TMB,fill=IMC,color=IMC))+
   geom_jitter(width = 0.2,size=0.5)+
   geom_boxplot(width=0.2,color="black",
                outlier.alpha = 0,size=0.5)+
@@ -96,19 +105,7 @@ p2<-ggplot(sample,aes(x=IMC,y=Aneuploidy.Score,fill=IMC,color=IMC))+
   ylab("Aneuploidy")+xlab(NULL)+
   stat_compare_means(method = "kruskal.test")
 
-p3<-ggplot(sample,aes(x=IMC,y=MSIsensor.Score,fill=IMC,color=IMC))+
-  geom_jitter(width = 0.2,size=0.5)+
-  geom_boxplot(width=0.2,color="black",
-               outlier.alpha = 0,size=0.5)+
-  theme_few()+
-  scale_fill_d3()+
-  scale_color_d3()+
-  theme(legend.position = "none")+
-  ylab("MSIsensor Score")+xlab(NULL)+
-  stat_compare_means(method = "kruskal.test")+
-  ylim(0,0.5)
-
-p4<-ggplot(sample,aes(x=IMC,y=GMeth,fill=IMC,color=IMC))+
+p3<-ggplot(sample,aes(x=IMC,y=GMeth,fill=IMC,color=IMC))+
   geom_jitter(width = 0.2,size=0.5)+
   geom_boxplot(width=0.2,color="black",
                outlier.alpha = 0,size=0.5)+
@@ -120,7 +117,7 @@ p4<-ggplot(sample,aes(x=IMC,y=GMeth,fill=IMC,color=IMC))+
   stat_compare_means(method = "kruskal.test")
   
 library(patchwork)
-p1+p2+p3+p4
+p1+p2+p3
 
 ##########Figure 1G-H, FigureS2B-D
 load("TCGA_Cancer_sample.RDa")
@@ -130,15 +127,12 @@ IMC=IMC[sample$sample_id,]
 IMC$sub5=gsub("C","IMC",IMC$sub5)
 sample$IMC=IMC$sub5
 sample=sample[-which(is.na(sample$IMC)),]
-sv<-sample[,c("IMC","TCGA.PanCanAtlas.Cancer.Type.Acronym",
-              "Disease.Free..Months.","Disease.Free.Status",
-              "Months.of.disease.specific.survival",
-              "Disease.specific.Survival.status",
+colnames(sample)[11]="stage"
+sv<-sample[,c("IMC","stage","Diagnosis.Age","Sex",
               "Overall.Survival..Months.","Overall.Survival.Status",
               "Progress.Free.Survival..Months.",
               "Progression.Free.Status","Radiation.Therapy")]
-lapply(c("Disease.Free","specific",
-         "Overall.Survival","Progress"), function(x){
+lapply(c("Overall.Survival","Progress"), function(x){
            ssv<-sv[,c(1,2,grep(x,colnames(sv)),11)]
            loc<-union(union(which(is.na(ssv[,3])),
                             which(is.na(ssv[,4]))),
@@ -155,48 +149,27 @@ lapply(c("Disease.Free","specific",
            library(ggthemes)
            library(ggsci)
            
-           pairwise_survdiff(Surv(time, status) ~ IMC, data=ssv,p.adjust.method = "none")
+           res.cox <- coxph(Surv(time, status) ~ IMC+stage+Sex+Diagnosis.Age, data=ssv)
+           df <- with(ssv,
+                      data.frame(IMC = sort(unique(ssv$IMC)), 
+                                 Diagnosis.Age = rep(mean(ssv$Diagnosis.Age, na.rm = TRUE),length(unique(ssv$IMC))),
+                                 Sex = rep("Male",length(unique(ssv$IMC))),
+                                 stage = rep("STAGE I",length(unique(ssv$IMC)))
+                      )
+           )
            
-           fit <- survfit(Surv(time, status) ~ IMC, data=ssv)   
-           ggsurvplot(fit,data=ssv,
-                      pval = T, conf.int = T, 
-                      palette=pal_d3()(5), 
+           fit <- survfit(res.cox, newdata = df)
+           
+           ggsurvplot(fit, data = df,
+                      pval = TRUE, conf.int = T, 
+                      risk.table = F,
+                      palette=c("#6AB5DD","#EA614A"), 
                       risk.table.col = "strata", # Change risk table color by groups
                       linetype = "strata", # Change line type by groups
                       surv.median.line = "hv", # Specify median survival
-                      ggtheme = theme_few()
+                      ggtheme = theme_base()
            )
-           ggsave(paste0(x,"_IMC_survival.pdf"),
-                  height = 5,width = 4.5,dpi=600)
-           
-           fit <- survfit(Surv(time, status) ~ cancer, data=ssv)   
-           ggsurvplot(fit,data=ssv,
-                      pval = T, 
-                      palette=pal_futurama()(5), 
-                      risk.table.col = "strata", # Change risk table color by groups
-                      linetype = "strata", # Change line type by groups
-                      surv.median.line = "hv", # Specify median survival
-                      ggtheme = theme_few()
-           )
-           ggsave(paste0(x,"_CancerType_survival.pdf"),
-                  height = 5,width = 4.5,dpi=600)
-           
-           da<-split(ssv,ssv$Radiation.Therapy)
-           lapply(da, function(y){
-             res.cox <- coxph(Surv(time, status) ~ IMC, data=y)
-             df <- with(y,data.frame(IMC = unique(y$IMC)))
-             fit <- survfit(res.cox, newdata = df)
-             
-             ggsurvplot(fit, data = df,
-                        pval = TRUE, conf.int = F, 
-                        risk.table = F, 
-                        palette=pal_d3()(5), 
-                        linetype = "strata", # Change line type by groups
-                        surv.median.line = "hv", # Specify median survival
-                        ggtheme = theme_base()
-             )
-             ggsave(paste0(unique(y$Radiation.Therapy),"_",x,"_Radiation.Therapy_survival.pdf"),
-                    height = 5,width = 4.5,dpi=600)           
+
            })
 })
 
